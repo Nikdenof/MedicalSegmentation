@@ -21,3 +21,5 @@ The comparison of the two models showed that U-net performed better in terms of 
 
 Based on the results, U-net is the best performing model for this task. However, if faster training time and fewer model parameters are a priority, SegNet may be a suitable alternative. The report includes a detailed comparison of the models, as well as the choice of the best models from several clusters and the choice of the overall best model. Additionally, a small conclusion throughout the report is included.
 
+### Necessary libraries
+scikit-image - library for image processing
