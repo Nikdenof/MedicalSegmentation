@@ -3,7 +3,7 @@ import torch.nn as nn
 
 class ConvReLU(nn.Module):
     def __init__(self, in_c, out_c, kernel_size=3, padding=1) -> None:
-        super().__init__()
+        super(ConvReLU, self).__init__()
         self.conv = nn.Conv2d(in_c, out_c, kernel_size=kernel_size, padding=padding)
         self.bn = nn.BatchNorm2d(out_c)
         self.relu = nn.ReLU(inplace=True)
@@ -17,7 +17,7 @@ class ConvReLU(nn.Module):
 
 class EncoderBlock(nn.Module):
     def __init__(self, in_c, out_c, depth=2, kernel_size=3, padding=1) -> None:
-        super().__init__()
+        super(EncoderBlock, self).__init__()
         self.layers = nn.ModuleList()
         for i in range(depth):
             self.layers.append(ConvReLU(in_c if i == 0 else out_c, out_c, kernel_size, padding))
@@ -32,7 +32,7 @@ class EncoderBlock(nn.Module):
 
 class DecoderBlock(nn.Module):
     def __init__(self, in_c, out_c, depth=2, kernel_size=3, padding=1, classification=False) -> None:
-        super().__init__()
+        super(DecoderBlock, self).__init__()
         self.layers = nn.ModuleList()
         for i in range(depth):
             if i == depth - 1 and classification:
@@ -51,7 +51,7 @@ class DecoderBlock(nn.Module):
 
 
 class SegNet(nn.Module): 
-    def __init__(self, in_channels=3, out_channels=1, features=64):
+    def __init__(self, in_channels=3, out_channels=1, features=64) -> None:
         super(SegNet, self).__init__()
 
         # Encoder
