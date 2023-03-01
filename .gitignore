@@ -12,3 +12,4 @@
 *.zip
 
 PH2Dataset/
+__pycache__/ 
