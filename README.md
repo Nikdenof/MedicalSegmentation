@@ -1,4 +1,27 @@
-# Medical Segmentation README
+# Medical Segmentation 
+
+## Requirements
+* scikit-image >= 0.20.0
+* PyTorch >= 1.2
+* Python >= 3.5
+TBD
+
+## Dataset 
+The data for this project was obtained from the official site of the ADDI Project.
+https://www.fc.up.pt/addi/ph2%20database.html
+
+## Features
+* SegNet model, implemented from scratch, available to use in any of your project using Pytorch Hub
+* 3 different types of loss functions for binary segmentation, implemented from scratch using Pytorch
+* Train and test code with visualization of the segmentation
+* Jupyter Notebook containing the comparison between two different segmentation architectures
+
+## Folder Structure
+TBD
+
+## Usage
+At this point you can run the code in this repo using Jupyter Notebook titled SegmentationScreening.ipynb
+Train and test python scripts are still in development.
 
 ## Report
 
@@ -21,5 +44,24 @@ The comparison of the two models showed that U-net performed better in terms of 
 
 Based on the results, U-net is the best performing model for this task. However, if faster training time and fewer model parameters are a priority, SegNet may be a suitable alternative. The report includes a detailed comparison of the models, as well as the choice of the best models from several clusters and the choice of the overall best model. Additionally, a small conclusion throughout the report is included.
 
-### Necessary libraries
-scikit-image - library for image processing
+
+## TODOs
+- [x] Implement SegNet architecture from scratch using PyTorch, in separate file
+- [x] Implement different loss function for binary segmentation tasks using PyTorch
+- [ ] Make train.py and test.py for more readable, reproducable code
+- [ ] Remake the folder structure to make it more clear and reusable
+- [ ] Publish the model and relevant tools using PyTorch Hub
+- [ ] Make a requirements.txt file to make the code more reproducable
+- [ ] Make a config.json file for convinient parameter tuning
+- [ ] Checkpoint saving and resuming
+- [ ] Customizable command line options for train.py
+- [ ] Deploy the model using Flask
+- [ ] Check the code using Flake8
+
+
+
+## License
+This project is licensed under the MIT License. See  LICENSE for more details.
+
+## Acknowledgements
+TBD
