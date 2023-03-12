@@ -12,6 +12,7 @@ https://www.fc.up.pt/addi/ph2%20database.html
 
 ## Features
 * SegNet model, implemented from scratch, available to use in any of your project using Pytorch Hub
+`torch.hub.load('Nikdenof/MedicalSegmentation', 'testmodel')`
 * 3 different types of loss functions for binary segmentation, implemented from scratch using Pytorch
 * Train and test code with visualization of the segmentation
 * Jupyter Notebook containing the comparison between two different segmentation architectures
