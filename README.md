@@ -24,6 +24,9 @@ TBD
 At this point you can run the code in this repo using Jupyter Notebook titled SegmentationScreening.ipynb
 Train and test python scripts are still in development.
 
+## Customization
+TBD
+
 ## Report
 
 In this report, we present the work done on the task of deep neural network segmentation. Two models were implemented: SegNet and U-net. The main focus of the report is to compare the results of these models and to identify the best performing model.
