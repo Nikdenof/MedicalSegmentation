@@ -55,6 +55,7 @@ Based on the results, U-net is the best performing model for this task. However,
 - [ ] Make a requirements.txt file to make the code more reproducable
 - [ ] Make a config.json file for convinient parameter tuning
 - [ ] Checkpoint saving and resuming
+- [ ] Make comprehensible logging system
 - [ ] Customizable command line options for train.py
 - [ ] Deploy the model using Flask
 - [ ] Check the code using Flake8
